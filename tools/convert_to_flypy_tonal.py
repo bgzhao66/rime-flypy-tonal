@@ -454,7 +454,7 @@ def get_flypyquick5_seq(word, pinyin_seq, get_frequency = get_frequency_default)
     # mode
     assert len(word) >= 1
     mode = 'none'
-    if len(word) <= 3:
+    if len(word) <= 2:
         mode = 'last-first'
 
     pys = ''.join(flypys)
@@ -559,7 +559,7 @@ encoder:
     - length_equal: 2
       formula: "AaAbAcBaBbBcBdAe"
     - length_equal: 3
-      formula: "AaAbAcBaBbBcCaCbCcCdAe"
+      formula: "AaAbAcBaBbBcCaCbCc"
     - length_equal: 4
       formula: "AaAbAcBaBbBcCaCbCcDaDbDc"
     - length_equal: 5
