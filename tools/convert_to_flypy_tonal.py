@@ -549,7 +549,7 @@ sort: by_weight"""
 
     if input_tables:
         hdr += """
-max_phrase_length: 10
+max_phrase_length: 7
 min_phrase_weight: 100
 encoder:
   exclude_patterns:
@@ -557,17 +557,17 @@ encoder:
     - '^[a-z]..$'
   rules:
     - length_equal: 2
-      formula: "AaAbBaBbBcAd"
+      formula: "AaAbAcBaBbBcBdAe"
     - length_equal: 3
-      formula: "AaAbBaBbCaCbCcAd"
+      formula: "AaAbAcBaBbBcCaCbCcCdAe"
     - length_equal: 4
-      formula: "AaAbBaBbCaCbDaDb"
+      formula: "AaAbAcBaBbBcCaCbCcDaDbDc"
     - length_equal: 5
-      formula: "AaAbBaBbCaCbDaDbEaEb"
+      formula: "AaAbAcBaBbBcCaCbCcDaDbDcEaEbEc"
     - length_equal: 6
-      formula: "AaAbBaBbCaCbDaDbEaEbFaFb"
+      formula: "AaAbAcBaBbBcCaCbCcDaDbDcEaEbEcFaFbFc"
     - length_equal: 7
-      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGb"
+      formula: "AaAbAcBaBbBcCaCbCcDaDbDcEaEbEcFaFbFcGaGbGc"
 import_tables:"""
         for table in input_tables:
             hdr += f"\n  - {table}"
