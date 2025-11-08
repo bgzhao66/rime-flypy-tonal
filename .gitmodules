@@ -1,3 +1,6 @@
 [submodule "lua"]
 	path = lua
 	url = git@github.com:bgzhao66/rime-lua-filters.git
+[submodule "plugins/latex"]
+	path = plugins/latex
+	url = git@github.com:bgzhao66/rime_latex.git
