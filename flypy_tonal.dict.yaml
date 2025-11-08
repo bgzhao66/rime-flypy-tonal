@@ -28,6 +28,8 @@ import_tables:
   - flypy_tonal_phrase
   - flypy_tonal_abbrev
   - flypy_tonal_abbrevextra
+  - flypy_tonal_extra0
+  - flypy_tonal_extra1
 ...
 
 啊	aajrr	93805
