@@ -15,7 +15,7 @@ encoder:
     - length_equal: 2
       formula: "AaAbAcBaBbBcBdAe"
     - length_equal: 3
-      formula: "AaAbAcBaBbBcCaCbCcCdAe"
+      formula: "AaAbAcBaBbBcCaCbCc"
     - length_equal: 4
       formula: "AaAbAcBaBbBcCaCbCcDaDbDc"
     - length_equal: 5
