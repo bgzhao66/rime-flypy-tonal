@@ -333,7 +333,7 @@ def get_toneless_pinyin_phrases():
         toneless_phrases[word] = [toneless_code.split() for toneless_code in toneless_phrases[word]]
     return toneless_phrases
 
-kTonelessPinyinPhrases = get_toneless_pinyin_phrases()
+# kTonelessPinyinPhrases = get_toneless_pinyin_phrases()
 
 # get the frequency of a character from freq_dict with default value 0.
 def get_freq_of_word(word, toneless_code, freq_dict):
@@ -533,7 +533,7 @@ def get_difference_set(phrase_list):
     """Get the difference set of phrases against the builtin Pinyin phrases."""
     diff_list = []
     for word in phrase_list:
-        if word not in kTonelessPinyinPhrases:
+        if word not in kPinyinPhrases:
             diff_list.append(word)
     return diff_list
 
@@ -1086,7 +1086,7 @@ def main():
         for input_file in args.input_files:
             words = get_words_from_file(input_file, words)
         if args.difference:
-            for w in kTonelessPinyinPhrases.keys():
+            for w in kPinyinPhrases.keys():
                 if w in words:
                     del words[w]
         print(f"Total {len(words)} extra words read from input files.")

@@ -4,9 +4,9 @@ PRIMARY_NAME = flypy_tonal
 
 .SILENT:
 all:
-	python3 ./convert_to_flypy_tonal.py --name $(PRIMARY_NAME) --chinese_code  --phrase --abbreviate
-#				--extra_table --difference 	\
-#				pinyin_trad_ext1.dict.txt
+	python3 ./convert_to_flypy_tonal.py --name $(PRIMARY_NAME) --chinese_code  --phrase --abbreviate \
+				--extra_table --difference 	\
+				pinyin_trad_ext1.dict.txt
 #				extra/360wdict.txt    \
 #				extra/essay.txt       \
 #				extra/12dicts.txt     \
